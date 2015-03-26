@@ -1,0 +1,14 @@
+html {
+  font: 14px normal Arial, sans-serif;
+  color: #626771;
+}
+
+.buttonSubmit {
+  background-color: #41c7c2;
+  border: none;
+  color: white;
+  border-radius: 10%;
+  outline: none;
+  cursor: pointer;
+}
+

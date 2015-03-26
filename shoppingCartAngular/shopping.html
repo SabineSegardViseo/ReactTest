@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="cartApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <LINK rel=stylesheet href="./shopping.css" type="text/css">
+    <script src="./buy.js"></script>
+</head>
+<body >
+<div ng-controller="CartController">
+    <h1>Our services</h1>
+    <div id="services">
+        <p ng-repeat="service in services" ng-class="{active:isActive(service)}" ng-click="handleClick(service)">{{service.name}}<b>${{service.price.toFixed(2)}}</p>
+        <p id="total">Total <b>${{total.toFixed(2)}}</p>
+    </div>
+</div>
+</body>
+</html>
